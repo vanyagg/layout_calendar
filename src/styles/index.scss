@@ -1,7 +1,6 @@
 $cell-size: 100px;
 $gap-size: 1px;
 $padding-calendar: 10px;
-$margin-left: 6 * $cell-size + 6 * $gap-size;
 $calendar-width: (($cell-size * 7) + ($gap-size * 6));
 $days: (
   'mon': 0,
@@ -49,10 +48,6 @@ body {
     background-color: #eee;
     border: 1px solid black;
     cursor: pointer;
-  }
-
-  & :first-child {
-    margin-left: $margin-left;
   }
 
   @each $day, $num in $days {
